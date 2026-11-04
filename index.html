@@ -1,5 +1,317 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="TEDxAl Neelain University — ideas meet, perspectives move."><title>TEDxAl Neelain University — The Confluence</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@1,600;1,700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head><body class="confluence"><header class="topbar"><a class="brand" href="index.html"><span>TED<span class="x">x</span></span><small>AL NEELAIN UNIVERSITY</small></a><button class="menu-toggle" aria-label="Toggle navigation">☰</button><nav class="nav"><a class="active" href="index.html">The idea</a><a href="about.html">Our story</a><a href="register.html">Get involved</a><a class="nav-cta" href="register.html">Enter the conversation ↗</a></nav></header><main><section class="confluence-hero"><div class="hero-grid-lines"></div><div class="river river-one"></div><div class="river river-two"></div><div class="hero-copy"><p class="eyebrow"><i></i> KHARTOUM · SUDAN · INDEPENDENTLY ORGANIZED TEDx EVENT</p><p class="overline">TWO CURRENTS. INFINITE DIRECTIONS.</p><h1>Where ideas<br><em>come together.</em></h1><p class="hero-deck">At the meeting point of perspectives, something new begins. A stage for ideas rooted here — and conversations that travel far beyond.</p><div class="hero-actions"><a class="btn btn-red" href="register.html">Find your place <span>↗</span></a><a class="hero-quiet" href="#manifesto">Explore the thinking <span>↓</span></a></div><div class="hero-location"><span>15°36′ N&nbsp; 32°32′ E</span><b></b><span>AL NEELAIN UNIVERSITY</span></div></div><div class="confluence-mark" aria-hidden="true"><span class="mark-a"></span><span class="mark-b"></span><span class="mark-core">X</span><small>THE CONFLUENCE / 01</small></div><div class="hero-bottom"><span>SCROLL TO FOLLOW THE CURRENT</span><span>01 — 03</span></div></section>
-<section class="manifesto" id="manifesto"><div class="manifesto-index">01 / THE CONFLUENCE</div><div class="manifesto-body"><p class="manifesto-small">A PLACE. A QUESTION. A THOUSAND WAYS FORWARD.</p><h2>Khartoum has always been a meeting point. <em>So should ideas.</em></h2><div class="manifesto-lower"><p>At the confluence of the Blue Nile and White Nile, two currents become one. We borrow that spirit — bringing different disciplines, lived experiences and ways of seeing into the same room.</p><a class="under-link" href="about.html">The story behind the idea ↗</a></div></div></section>
-<section class="split-story"><div class="story-image"><div class="image-stamp">KHARTOUM<br>THE PLACE WE THINK FROM.</div></div><div class="story-content"><p class="section-kicker">02 / WHY THIS STAGE</p><h2>Not another<br>echo chamber.</h2><p>We are building a space for ideas with substance: researched, challenged, and shared with care. Not noise for the sake of noise. Not inspiration without insight.</p><div class="story-points"><div><b>01</b><span>Ideas grounded in evidence</span></div><div><b>02</b><span>Perspectives beyond the obvious</span></div><div><b>03</b><span>Conversations that keep moving</span></div></div><a class="btn btn-outline" href="about.html">What we're about ↗</a></div></section>
-<section class="signal-section"><div class="signal-head"><p class="section-kicker">03 / THE SIGNAL</p><p>THE NEXT CURRENT STARTS WITH PEOPLE.</p></div><div class="signal-grid"><article><span>01 — LISTEN</span><h3>Arrive<br><em>curious.</em></h3><p>Come ready to hear something that changes the angle.</p></article><article><span>02 — QUESTION</span><h3>Leave the<br><em>easy answers.</em></h3><p>Make room for complexity, evidence and a better question.</p></article><article><span>03 — CARRY</span><h3>Take an idea<br><em>with you.</em></h3><p>The stage ends. The thinking should not.</p></article></div></section>
-<section class="closing confluence-close"><p class="eyebrow red-text">YOUR CURRENT BELONGS HERE</p><h2>Come for the idea.<br><em>Stay for what it starts.</em></h2><p>Event date, venue and programme will be announced when confirmed.</p><a class="btn btn-red" href="register.html">Register your interest ↗</a><div class="close-watermark">X</div></section></main><footer class="footer"><a class="brand" href="index.html"><span>TED<span class="x">x</span></span><small>AL NEELAIN UNIVERSITY</small></a><p>Locally rooted. Open to the world.</p><div class="footer-links"><a href="index.html">The idea</a><a href="about.html">Our story</a><a href="register.html">Get involved</a></div><small class="copyright">© 2026 TEDxAl Neelain University. This independently organized TEDx event is operated under license from TED. TED and the TEDx marks are used under license.</small></footer><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEDxAlNeelainUniversity | The Future of Heritage</title>
+    <style>
+        /* Core Variables & Reset */
+        :root {
+            --ted-red: #eb0028;
+            --dark-base: #0a0a0c;
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --text-main: #f4f4f5;
+            --text-muted: #a1a1aa;
+            --nile-blue: #0077b6;
+            --desert-gold: #e9c46a;
+            --success: #10b981;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', 'Segoe UI', sans-serif; }
+        
+        body {
+            background-color: var(--dark-base);
+            color: var(--text-main);
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 15% 50%, rgba(235, 0, 40, 0.15), transparent 25%),
+                radial-gradient(circle at 85% 30%, rgba(0, 119, 182, 0.1), transparent 25%);
+            background-attachment: fixed;
+        }
+
+        /* Typography & Utilities */
+        h1, h2, h3 { letter-spacing: -0.03em; }
+        .text-red { color: var(--ted-red); }
+        .glass-panel {
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+        }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0; width: 100%;
+            padding: 20px 50px;
+            display: flex; justify-content: space-between; align-items: center;
+            z-index: 1000;
+            background: linear-gradient(to bottom, rgba(10,10,12,0.9), transparent);
+        }
+        .logo { font-size: 1.5rem; font-weight: 900; }
+        .nav-links button {
+            background: none; border: none; color: var(--text-main);
+            margin-left: 30px; font-size: 0.9rem; cursor: pointer;
+            transition: color 0.3s; font-weight: 500;
+        }
+        .nav-links button:hover { color: var(--ted-red); }
+        .btn-primary {
+            background: var(--ted-red); color: white;
+            padding: 10px 24px; border-radius: 8px; font-weight: 600;
+            border: none; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(235, 0, 40, 0.4);
+        }
+
+        /* --- PUBLIC VIEW --- */
+        #public-view { transition: opacity 0.5s ease; }
+        .hero {
+            height: 100vh; display: flex; align-items: center; justify-content: center;
+            position: relative; text-align: center;
+        }
+        .hero-content { z-index: 2; max-width: 800px; }
+        .hero h1 { font-size: 5rem; line-height: 1.1; margin-bottom: 20px; font-weight: 900; }
+        .hero p { font-size: 1.2rem; color: var(--text-muted); margin-bottom: 40px; }
+        
+        /* Animated Soundwave (Haqiba Rhythm) */
+        .soundwave {
+            display: flex; gap: 6px; justify-content: center; align-items: flex-end;
+            height: 60px; margin-bottom: 40px;
+        }
+        .bar {
+            width: 6px; background: var(--ted-red); border-radius: 3px;
+            animation: pulse 1.5s infinite ease-in-out alternate;
+        }
+        .bar:nth-child(2) { animation-delay: 0.2s; height: 100%; }
+        .bar:nth-child(3) { animation-delay: 0.4s; height: 60%; }
+        .bar:nth-child(4) { animation-delay: 0.1s; height: 80%; }
+        .bar:nth-child(5) { animation-delay: 0.5s; height: 40%; }
+        @keyframes pulse { 0% { height: 20%; opacity: 0.5; } 100% { height: 100%; opacity: 1; } }
+
+        /* --- ORGANIZER DASHBOARD VIEW --- */
+        #admin-view {
+            display: none; opacity: 0; padding: 100px 40px 40px;
+            min-height: 100vh; transition: opacity 0.5s ease;
+        }
+        .dashboard-header {
+            display: flex; justify-content: space-between; align-items: flex-end;
+            margin-bottom: 40px;
+        }
+        .dashboard-header h2 { font-size: 2.5rem; }
+        .dashboard-header p { color: var(--text-muted); }
+
+        /* Bento Grid Layout */
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: minmax(180px, auto);
+            gap: 20px;
+        }
+
+        .bento-item { padding: 24px; display: flex; flex-direction: column; }
+        
+        /* Grid spans */
+        .span-2 { grid-column: span 2; }
+        .span-2-row { grid-row: span 2; }
+        .span-3 { grid-column: span 3; }
+        .span-4 { grid-column: span 4; }
+
+        /* Dashboard Internal Typography */
+        .widget-title { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin-bottom: 15px; font-weight: 600; }
+        
+        /* Specific Widgets */
+        .metric-value { font-size: 3rem; font-weight: 800; margin-bottom: 5px; }
+        .metric-trend { font-size: 0.9rem; color: var(--success); }
+
+        /* Budget Progress Bars */
+        .budget-row { margin-bottom: 15px; }
+        .budget-labels { display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 6px; }
+        .progress-bg { width: 100%; height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden; }
+        .progress-fill { height: 100%; border-radius: 4px; }
+        .fill-sponsors { width: 75%; background: var(--success); }
+        .fill-logistics { width: 45%; background: var(--ted-red); }
+        .fill-production { width: 60%; background: var(--desert-gold); }
+
+        /* Speaker Pipeline Kanban (Mini) */
+        .speaker-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+        .speaker-item { 
+            display: flex; justify-content: space-between; align-items: center;
+            background: rgba(255,255,255,0.05); padding: 12px 16px; border-radius: 8px;
+        }
+        .status-badge { 
+            font-size: 0.7rem; padding: 4px 8px; border-radius: 12px; font-weight: 700;
+        }
+        .status-confirmed { background: rgba(16, 185, 129, 0.2); color: var(--success); }
+        .status-recon { background: rgba(235, 0, 40, 0.2); color: var(--ted-red); }
+
+        /* Operations & Access Logs (Cyber Theme) */
+        .terminal-log {
+            font-family: 'Courier New', Courier, monospace; font-size: 0.8rem;
+            color: var(--success); background: rgba(0,0,0,0.5); padding: 15px;
+            border-radius: 8px; flex-grow: 1; overflow-y: hidden;
+        }
+        .terminal-log p { margin-bottom: 5px; }
+        .log-warn { color: var(--desert-gold); }
+
+    </style>
+</head>
+<body>
+
+    <!-- Global Navigation -->
+    <nav>
+        <div class="logo"><span class="text-red">TEDx</span>AlNeelainUniversity</div>
+        <div class="nav-links">
+            <button onclick="showPublic()">Experience</button>
+            <button onclick="showDashboard()">Organizer Login</button>
+            <button class="btn-primary">Register Now</button>
+        </div>
+    </nav>
+
+    <!-- PUBLIC VIEW: The Cinematic Experience -->
+    <div id="public-view">
+        <section class="hero">
+            <div class="hero-content">
+                <div class="soundwave">
+                    <div class="bar" style="height: 40%"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar" style="height: 30%"></div>
+                </div>
+                <h1>Where the Nile's Wisdom Meets <span class="text-red">Tomorrow's</span> Innovation.</h1>
+                <p>Translating the courage and generosity of traditional oral histories into the digital frontier. Be part of the conversation shaping Sudan's tech ecosystem.</p>
+                <button class="btn-primary" style="font-size: 1.2rem; padding: 15px 35px;">Claim Your Ticket</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- ADMIN VIEW: Organizer Dashboard (Event Manager Pro) -->
+    <div id="admin-view">
+        <div class="dashboard-header">
+            <div>
+                <h2>Command Center</h2>
+                <p>Welcome back, Khalid (Hyde). System is fully operational.</p>
+            </div>
+            <button class="btn-primary" onclick="alert('Exporting full analytics report...')">Export Event Data (.CSV)</button>
+        </div>
+
+        <div class="bento-grid">
+            
+            <!-- Metric: Tickets -->
+            <div class="glass-panel bento-item">
+                <div class="widget-title">Registration Volume</div>
+                <div class="metric-value">482</div>
+                <div class="metric-trend">↑ 12% vs last week (Target: 600)</div>
+            </div>
+
+            <!-- Metric: Days Left -->
+            <div class="glass-panel bento-item">
+                <div class="widget-title">Countdown</div>
+                <div class="metric-value text-red">34</div>
+                <div class="metric-trend">Days until Curtains Open</div>
+            </div>
+
+            <!-- Operations / Logistics Tracker -->
+            <div class="glass-panel bento-item span-2 span-2-row">
+                <div class="widget-title">Budget & Financial Operations</div>
+                
+                <div class="budget-row">
+                    <div class="budget-labels"><span>Sponsorships Secured</span> <span>$4,500 / $6,000</span></div>
+                    <div class="progress-bg"><div class="progress-fill fill-sponsors"></div></div>
+                </div>
+                
+                <div class="budget-row" style="margin-top: 20px;">
+                    <div class="budget-labels"><span>Stage & Production Costs</span> <span>$1,200 / $2,000</span></div>
+                    <div class="progress-bg"><div class="progress-fill fill-production"></div></div>
+                </div>
+
+                <div class="budget-row" style="margin-top: 20px;">
+                    <div class="budget-labels"><span>Venue Logistics & Marketing</span> <span>$900 / $2,000</span></div>
+                    <div class="progress-bg"><div class="progress-fill fill-logistics"></div></div>
+                </div>
+
+                <div style="margin-top: auto; padding-top: 20px; border-top: 1px solid var(--glass-border);">
+                    <div class="widget-title">Latest Invoice</div>
+                    <p style="font-size: 0.9rem; color: #ccc;">Company Registration Fees (Khartoum Dept.) - Paid</p>
+                </div>
+            </div>
+
+            <!-- Curation Pipeline -->
+            <div class="glass-panel bento-item span-2 span-2-row">
+                <div class="widget-title">Speaker Curation Pipeline</div>
+                <ul class="speaker-list">
+                    <li class="speaker-item">
+                        <div>
+                            <strong>Dr. Amira T.</strong>
+                            <div style="font-size: 0.8rem; color: var(--text-muted);">Topic: The Digital Haqiba</div>
+                        </div>
+                        <span class="status-badge status-confirmed">Confirmed - Rehearsing</span>
+                    </li>
+                    <li class="speaker-item">
+                        <div>
+                            <strong>Ahmed M.</strong>
+                            <div style="font-size: 0.8rem; color: var(--text-muted);">Topic: AI in Agriculture</div>
+                        </div>
+                        <span class="status-badge status-confirmed">Confirmed - Slide Review</span>
+                    </li>
+                    <li class="speaker-item">
+                        <div>
+                            <strong>Doaa O.</strong>
+                            <div style="font-size: 0.8rem; color: var(--text-muted);">Topic: Empowering Youth Tech</div>
+                        </div>
+                        <span class="status-badge status-recon">Initial Recon / Outreach</span>
+                    </li>
+                </ul>
+                <button class="btn-primary" style="margin-top: 20px; width: 100%; background: transparent; border: 1px solid var(--ted-red); color: var(--ted-red);">+ Add Speaker Nominee</button>
+            </div>
+
+            <!-- System/Security Logs -->
+            <div class="glass-panel bento-item span-2">
+                <div class="widget-title">SOC / Access Control Logs</div>
+                <div class="terminal-log">
+                    <p>> [08:14] SYS: Access granted to PR Team (Taha)</p>
+                    <p class="log-warn">> [09:02] WARN: Multiple failed login attempts on Ticket Portal</p>
+                    <p>> [09:05] SYS: Automated triage blocked suspicious IP</p>
+                    <p>> [10:12] NET: Multi-function Print Station Driver updated successfully</p>
+                    <p class="blinking-cursor">> _</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // Simple SPA State Management
+        const publicView = document.getElementById('public-view');
+        const adminView = document.getElementById('admin-view');
+
+        function showDashboard() {
+            publicView.style.opacity = 0;
+            setTimeout(() => {
+                publicView.style.display = 'none';
+                adminView.style.display = 'block';
+                setTimeout(() => { adminView.style.opacity = 1; }, 50);
+            }, 500);
+        }
+
+        function showPublic() {
+            adminView.style.opacity = 0;
+            setTimeout(() => {
+                adminView.style.display = 'none';
+                publicView.style.display = 'block';
+                setTimeout(() => { publicView.style.opacity = 1; }, 50);
+            }, 500);
+        }
+
+        // Terminal blink effect
+        setInterval(() => {
+            const cursor = document.querySelector('.blinking-cursor');
+            if(cursor) cursor.style.visibility = cursor.style.visibility === 'hidden' ? 'visible' : 'hidden';
+        }, 530);
+    </script>
+</body>
+</html>
